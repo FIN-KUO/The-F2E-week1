@@ -1,0 +1,56 @@
+﻿/*RWD*/
+$sm : 576px;
+$md : 768px;
+$lg : 992px;
+$xl : 1200px;
+
+/*color*/
+$c_text:
+(
+  primary_light : #FFFFFF,
+  primary_dark : #000000,
+  second : #858993
+);
+$c_bg:
+(
+  color1 : #0E1835,
+  color2 : #06102B,
+  color3 : #151F3F,
+);
+$c_primary:
+(
+  color1 : #9DA4FF,
+  color2 : #DCDEFF,
+  color3 : #6E77E9
+);
+$c_second:
+(
+  color1 : #55FFAD
+);
+$c_third:
+(
+  color1 : #FFE34E,
+  color2 : #FFF385,
+  color3 : #313A65
+);
+/*font_family*/
+$font_family:
+(
+  ch : 'Noto Sans CJK TC',  
+  en_title : 'Monument Extended',
+  en_content : 'Montserrat'
+);
+
+/*font_size*/
+$fz_base : 1rem; /*16px*/
+$fz_sm : $fz_base * 0.75;/*12px*/
+$fz_md : $fz_base * 0.875;/*14px*/
+$fz_lg : $fz_base * 1.25;/*20px*/
+$fz_xl : $fz_base * 1.5;/*24px*/
+
+$fz_h1 : $fz_base * 3;/*48px*/
+$fz_h2 : $fz_base * 2.5;/*40px*/
+$fz_h3 : $fz_base * 2;/*32px*/
+$fz_h4 : $fz_base * 1.5;/*24px*/
+$fz_h5 : $fz_base * 1.25;/*20px*/
+

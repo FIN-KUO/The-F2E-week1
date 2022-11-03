@@ -1,0 +1,52 @@
+body{
+  color: map-get($c_text , primary_light );
+  font-family: map-get($font_family, ch);
+  font-size: $fz_lg;
+};
+
+.wrap{
+  max-width: 375px;
+  margin: 0 auto;
+  @include pad{
+    max-width: 768px;
+  };
+};
+.header{
+  width: 375px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 16px;  
+  .logo{
+    display: flex; 
+    align-items: center;
+    a{
+      color: map-get($c_text, primary_light );  
+      margin-right: 25px;  
+    }; 
+    img{
+      width: 110px;
+    };  
+  };  
+  button{
+    padding: 9px 16px;
+    color: map-get($c_text, primary_light );
+    border: 1px solid map-get($c_text, primary_light );
+    border-radius: 98px;
+    font-size: $fz_base;
+    line-height: 20px;
+  };
+  /*@include pad{
+    width: 768px;
+  };*/
+};
+
+
+
+/*background*/
+@for $i from 1 through 3 {
+  .bg_color#{ $i }{
+    background: map-get($c_bg , color#{ $i });
+  };
+};

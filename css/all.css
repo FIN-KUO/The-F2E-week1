@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/*font-family*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@500&family=Noto+Sans+TC:wght@400;700&display=swap");
+/*RWD*/
+/*color*/
+/*font_family*/
+/*font_size*/
+/*16px*/
+/*12px*/
+/*14px*/
+/*20px*/
+/*24px*/
+/*48px*/
+/*40px*/
+/*32px*/
+/*24px*/
+/*20px*/
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cell spacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*全域 border box -- 省去盒模型計算*/
+*, *::before, ::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /*圖片下方都會有產生一小塊，設定成block可以消失*/
+}
+
+/*RWD*/
+body {
+  color: #FFFFFF;
+  font-family: "Noto Sans CJK TC";
+  font-size: 1.25rem;
+}
+
+.wrap {
+  max-width: 375px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .wrap {
+    max-width: 768px;
+  }
+}
+
+.header {
+  width: 375px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  /*@include pad{
+    width: 768px;
+  };*/
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .logo a {
+  color: #FFFFFF;
+  margin-right: 25px;
+}
+.header .logo img {
+  width: 110px;
+}
+.header button {
+  padding: 9px 16px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 98px;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+/*background*/
+.bg_color1 {
+  background: #0E1835;
+}
+
+.bg_color2 {
+  background: #06102B;
+}
+
+.bg_color3 {
+  background: #151F3F;
+}/*# sourceMappingURL=all.css.map */
