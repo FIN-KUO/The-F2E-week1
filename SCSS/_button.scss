@@ -1,0 +1,10 @@
+.btn_lg{
+  @include btn(160px , 52px ,$fz_lg , 700, 36px , 50px);
+};
+.btn_sm{
+  @include btn(96px , 38px ,$fz_base , 400, 20px , 40px);
+};
+.btn_third1{
+  background: map-get($c_third , color1);
+  color: map-get($map: $c_text, $key: primary_dark);
+};
