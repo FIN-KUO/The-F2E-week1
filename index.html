@@ -12,24 +12,80 @@
   <div class="wrap">
     <div class="header wrap bg_color2">
       <div class="logo">
-        <a href="#"><i class="fa-solid fa-bars"></i></a>
+        <a id="hamburger" href="#"><i class="fa-solid fa-bars"></i></a>
         <h1><img src="./image/the f2e 1.png" alt=""></h1>
       </div>      
-      <button class="btn_sm" type="button">立即報名</button>
+      <div class="navbar">
+        <ul class="hamBar wrap bg_color2">
+          <il class="xmark"><i class="fa-solid fa-xmark"></i></il>
+          <il>
+            <ul class="nav">
+              <li class="nav__item"><a href="#">關卡資訊</a></li>
+              <li class="nav__item"><a href="#">攻略資源</a></li>
+              <li class="nav__item"><a href="#">求職專區</a></li>
+            </ul>
+          </il>
+          <il><button type="button" class="btn_md">登入</button></il>
+        </ul>
+        <button class="btn_sm" type="button">立即報名</button>
+      </div>      
     </div>
-    <section class="wrap banner bg_color2">
-      <img class="img_code" src="./image/code.png" alt="">
-      <div class="banner__label">
-        <label class="txt_md txt_shadow" for="">4TH</label>
-        <label class="txt_lg txt_shadow" for="">THE F2E</label>
+    <section class="wrap bg_color2 hero">      
+      <div class="hero__label">
+        <div class="position_top">
+          <img class="img_code" src="./image/code.png" alt="">
+          <img class="img_ill2" src="./image/illustration 02.png" alt="">
+          <label class="txt_md txt_shadow" for="">4TH</label>
+        </div>
+        <div class="position_bottom">
+          <img class="img_lock" src="./image/Lock-locked.png" alt="">
+          <img class="img_ill1" src="./image/illustration 01.png" alt="">
+          <label class="txt_lg txt_shadow" for="">THE F2E</label>
+        </div>        
         <label class="txt_sm" for="">互動式網頁設計</label>
-        <button class="btn_lg btn_third1" type="button">立即報名</button>
+        <button class="btn_lg btn_third1" type="button">立即報名</button>        
+      </div>      
+      <div class="rotating_light">
+        <div class="loop loop1"><img src="./image/Property1跑馬燈-Small.png" alt=""></div>
       </div>
-      <img class="img_lock" src="./image/Lock-locked.png" alt="">
-      <section class="rotating_light">
-        <!-- <div class="loop"><span>JOIN US</span><img src="./image/Star 18.png" alt=""></div> -->
-        <div class="loop"><img src="./image/Property1跑馬燈-Small.png" alt=""></div>
-      </section>
+    </section>
+    <section class="wrap bg_color2 question">
+      <div class="question__item group1">
+        <img class="img1" src="./image/Property1=Rectangle26.png" alt="">
+        <img class="img2" src="./image/Star2.png" alt="">
+        <img class="img3" src="./image/問號.png" alt="">
+        <img class="img4" src="./image/Property1=羨慕別人的酷酷網頁動畫？.png" alt="">
+      </div>
+      <div class="question__item group2">
+        <img class="img1" src="./image/Polygon1.png" alt="">
+        <img class="img2" src="./image/Union.png" alt="">
+        <img class="img3" src="./image/驚嘆號.png" alt="">
+        <img class="img4" src="./image/Property1=滿足不了同事的許願？.png" alt="">
+      </div>
+      <div class="question__item group3">
+        <img class="img1" src="./image/Property1=Rectangle28.png" alt="">
+        <img class="img2" src="./image/小老鼠.png" alt="">
+        <img class="img3" src="./image/Property1=動畫技能樹太雜無從下手？.png" alt="">
+      </div>
+    </section>
+    <section class="wrap bg_img banner">
+      <div class="loop loop2"><img src="./image/Property1=tape-Desktop.png" alt=""></div>
+      <div class="content">
+        <img class="img_rightHand" src="./image/Type=RightHand.png" alt="">
+        <div class="main">
+          <img class="img_title" src="./image/Type=Title.png" alt="">
+          <div class="txt_title">
+            <label for="">前端工程師</label>
+            <label for="">X</label>
+            <label for="">UI設計師</label>
+            <img class="img_front" src="./image/Type=front-enddeveloper.png" alt="">
+            <img class="img_uxdesign" src="./image/uxdesign.png" alt="">    
+          </div>
+        </div>
+        
+        <img class="img_leftHand" src="./image/Type=LeftHand.png" alt="">
+      </div>
+      <div class="loop loop3"><img src="./image/Property1=tape-Desktop.png" alt=""></div>
     </section>
     <div class="footer"></div>
   </div>
@@ -41,6 +97,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="./JS/all.js"></script>
 </body>
 </html>

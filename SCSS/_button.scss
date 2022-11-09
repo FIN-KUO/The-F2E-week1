@@ -4,6 +4,9 @@
 .btn_sm{
   @include btn(96px , 38px ,$fz_base , 400, 20px , 40px);
 };
+.btn_md{
+  @include btn(343px , 42px ,$fz_base , 400 , 20px , 40px);
+};
 .btn_third1{
   background: map-get($c_third , color1);
   color: map-get($map: $c_text, $key: primary_dark);
