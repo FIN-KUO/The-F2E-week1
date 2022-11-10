@@ -2257,10 +2257,10 @@ body {
   letter-spacing: 5.4px;
   font-family: "Monument Extended";
   text-transform: uppercase;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .hero__label .txt_md {
-    position: relative;
     top: 10px;
     left: 180px;
   }
@@ -2269,7 +2269,6 @@ body {
   .hero__label .txt_md {
     font-size: 34px;
     line-height: 56px;
-    position: relative;
     top: 20px;
     left: 205px;
   }
@@ -2282,6 +2281,7 @@ body {
   font-family: "Monument Extended";
   text-transform: uppercase;
   margin: 7.41px 0 17.39px 0;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .hero__label .txt_lg {
@@ -2626,12 +2626,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 630px;
 }
 @media screen and (min-width: 768px) {
   .banner .content {
     flex-direction: row-reverse;
     justify-content: center;
     padding: 50.84px 0 38.31px 0;
+    height: 340px;
   }
 }
 @media screen and (min-width: 980px) {
@@ -2647,6 +2649,7 @@ body {
 .banner .content .img_rightHand {
   width: 160px;
   transform: rotate(-55deg);
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .banner .content .img_rightHand {
@@ -2656,6 +2659,7 @@ body {
 .banner .content .img_leftHand {
   width: 160px;
   transform: rotate(-125deg);
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .banner .content .img_leftHand {
@@ -2677,8 +2681,8 @@ body {
 }
 .banner .content .txt_title label {
   font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 25px;
   color: #000000;
 }
 .banner .content .txt_title label + label {
@@ -2687,8 +2691,8 @@ body {
 .banner .content .img_front {
   width: 90px;
   position: absolute;
-  top: -290px;
-  left: 180px;
+  top: -310px;
+  left: 200px;
 }
 @media screen and (min-width: 768px) {
   .banner .content .img_front {
@@ -2699,7 +2703,7 @@ body {
 .banner .content .img_uxdesign {
   width: 180px;
   position: absolute;
-  top: 80px;
+  top: 130px;
   left: -110px;
 }
 @media screen and (min-width: 768px) {
@@ -2718,5 +2722,278 @@ body {
 @media screen and (min-width: 768px) {
   .banner .loop img {
     height: 45.33px;
+  }
+}
+
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 82px 0;
+}
+.level .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #55FFAD;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 48px;
+  color: #55FFAD;
+  padding: 20px 40px 24px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .level .title {
+    padding: 16px 36px 20px;
+    flex-direction: row;
+  }
+}
+.level .title img {
+  width: 46px;
+  position: absolute;
+  left: 250px;
+  top: -50px;
+}
+@media screen and (min-width: 768px) {
+  .level .title img {
+    width: 60px;
+    left: 450px;
+    top: -80px;
+  }
+}
+.level .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 60px 0;
+}
+.level .content span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.level .content .inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .level .content .inside {
+    flex-direction: row;
+  }
+}
+.level .cardArea {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 980px) {
+  .level .cardArea {
+    flex-direction: row;
+  }
+}
+.level .cardArea .cardList + .cardList {
+  margin-top: 40px;
+}
+@media screen and (min-width: 980px) {
+  .level .cardArea .cardList + .cardList {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .activity {
+    padding: 80px 0;
+  }
+}
+.activity .txt_title {
+  display: flex;
+  padding-bottom: 36px;
+}
+@media screen and (min-width: 768px) {
+  .activity .txt_title {
+    padding-bottom: 100px;
+  }
+}
+.activity .txt_title label {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 48px;
+  padding: 16px 16px 20px;
+}
+.activity .txt_title .img_frame1 {
+  width: 74px;
+}
+.activity .txt_title .img_frame2 {
+  width: 68px;
+}
+.activity .img_vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .activity .img_vector {
+    height: 144px;
+  }
+}
+.activity .img_vector img {
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .activity .img_vector img {
+    width: 40px;
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 300px;
+  height: 360px;
+}
+.cardList__tag {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #06102B;
+  padding: 4px 8px;
+  background: #55FFAD;
+  border-radius: 8px;
+}
+.cardList__title {
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #6E77E9;
+}
+.cardList__content {
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 28px;
+  color: #6E77E9;
+}
+.cardList__img {
+  width: auto;
+  height: 184px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardList__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+.cardList__btn span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #C4C8FF;
+  font-family: "Monument Extended";
+}
+.cardList__btn a {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #6E77E9;
+}
+
+.cardRules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #FFFFFF;
+  border-radius: 32px;
+  width: 343px;
+  height: 360px;
+}
+@media screen and (min-width: 768px) {
+  .cardRules {
+    flex-direction: row;
+    width: 520px;
+    height: 300px;
+  }
+}
+.cardRules .cardRules_img {
+  width: 220px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardRules__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .cardRules__text {
+    align-items: flex-start;
+    width: 300px;
+  }
+}
+.cardRules__text .title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+.cardRules__text .part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+}
+.cardRules__text .part div + div {
+  margin-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .cardRules__text .part {
+    align-items: flex-start;
+  }
+}
+.cardRules__text .content {
+  display: flex;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+.cardRules__text .content .date {
+  color: #55FFAD;
+}
+.cardRules__text .content .mark {
+  font-size: 0.75rem;
+  line-height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .cardRules_re {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cardRules_re .cardRules__text {
+    padding-left: 48px;
   }
 }/*# sourceMappingURL=all.css.map */

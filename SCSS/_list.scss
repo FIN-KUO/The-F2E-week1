@@ -1,0 +1,126 @@
+.cardList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 300px;
+  height: 360px;
+  &__tag{
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: $fz_base;
+    line-height: 20px;
+    color: map-get($map: $c_bg, $key: color2);
+    padding: 4px 8px;
+    background: map-get($c_second,color1);
+    border-radius: 8px;
+  };
+  &__title{
+    padding-top: 16px;
+    font-weight: 700;
+    font-size: $fz_h4;
+    line-height: 36px;
+    color: map-get($map: $c_primary, $key: color3);
+  };
+  &__content{
+    padding-top: 8px;
+    font-weight: 400;
+    font-size: $fz_lg;
+    line-height: 28px;
+    color: map-get($map: $c_primary, $key: color3);
+  };
+  &__img{
+    width: auto;
+    height: 184px;
+    @include in-center;
+  };
+  &__btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    span{
+      font-weight: 400;
+      font-size: $fz_md;
+      line-height: 18px;
+      color: #C4C8FF;
+      font-family: map-get($font_family , en_title );
+    };
+    a{
+      font-weight: 700;
+      font-size: $fz_md;
+      line-height: 18px;
+      color: map-get($map: $c_primary, $key: color3);      
+    };
+  };
+};
+.cardRules{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #FFFFFF;
+  border-radius: 32px;
+  width: 343px;
+  height: 360px;
+  @include pad{
+    flex-direction: row;
+    width: 520px;
+    height: 300px;
+  };
+  .cardRules_img{
+    width: 220px;
+    height: 140px;
+    @include in-center;
+  };
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include pad{
+      align-items: flex-start;
+      width: 300px;
+    };
+    .title{
+      font-weight: 700;
+      font-size: $fz_xl;
+      line-height: 36px;
+    };
+    .part{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px 0;
+      div + div {
+        margin-top: 8px;
+      };
+      @include pad{
+        align-items: flex-start;
+      };
+    };
+    .content{
+      display: flex;
+      font-weight: 400;
+      font-size: $fz_lg;
+      line-height: 28px;
+      .date{
+        color: map-get($c_second,color1);
+      };
+      .mark{
+        font-size: $fz_sm;
+        line-height: 12px;
+        @include in-center;
+      };
+    };
+  };
+};
+.cardRules_re{
+  @include pad{
+    flex-direction: row-reverse;
+  };
+  .cardRules__text{
+    @include pad{
+      padding-left: 48px;
+    };
+  };
+};
