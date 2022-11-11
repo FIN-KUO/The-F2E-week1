@@ -29,7 +29,7 @@
   const question = document.querySelector(".question")
   ScrollTrigger.create({
     trigger: question,
-    markers: true,
+    markers: false,
 
     //向下滾動進入start點時觸發callback
     onEnter: function () {
@@ -61,7 +61,7 @@
   const banner = document.querySelector(".banner")
   ScrollTrigger.create({
     trigger: banner,
-    markers: true,
+    markers: false,
 
     //向下滾動進入start點時觸發callback
     onEnter: function () {
@@ -90,7 +90,7 @@
 
   ScrollTrigger.create({
     trigger: carArea,
-    markers: true,
+    markers: false,
 
     //向下滾動進入start點時觸發callback
     onEnter: function () {
