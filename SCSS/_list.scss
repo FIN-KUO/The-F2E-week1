@@ -58,25 +58,72 @@
 .cardRules{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 3px solid #FFFFFF;
+  align-items: center;  
   border-radius: 32px;
-  width: 343px;
-  height: 360px;
-  @include pad{
-    flex-direction: row;
-    width: 520px;
-    height: 300px;
+  &__1{
+    width: 343px;
+    height: 360px;
+    border: 3px solid #FFFFFF;    
+    @include pad{      
+      width: 520px;
+      height: 300px;
+    };
   };
-  .cardRules_img{
+  &__2{
+    width: 343px;
+    @include pad{
+      width: 485px;
+    };
+    background: linear-gradient(map-get($c_bg ,color3) , map-get($c_bg ,color3)) padding-box,
+                linear-gradient(to right , map-get($c_third ,color3) , map-get($c_bg ,color2));
+    border: 1px solid transparent;
+    .cardRules__text{
+      padding-bottom: 32px;
+    };
+  };
+  &_row{
+    @include pad{
+      flex-direction: row;
+    };
+  };
+  &_re{
+    @include pad{
+      flex-direction: row-reverse;
+    };
+    .cardRules__text{
+      @include pad{
+        padding-left: 48px;
+      };
+    };
+  };
+  .img{
     width: 220px;
     height: 140px;
     @include in-center;
   };
+  .imgSM{
+    height: 112px;
+    @include in-center;
+    img{
+      width: 80px;
+    };
+  };
+  &__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: map-get($map: $c_primary, $key:color1 );
+    text-shadow: 0px 0px 10px rgb(map-get($map: $c_primary, $key:color1 ),0.6);
+    padding-bottom: 24px;
+    @include pad{
+      font-size: 40px;
+      line-height: 60px;
+    };
+  };
   &__text{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
     @include pad{
       align-items: flex-start;
       width: 300px;
@@ -85,7 +132,7 @@
       font-weight: 700;
       font-size: $fz_xl;
       line-height: 36px;
-    };
+    };    
     .part{
       display: flex;
       flex-direction: column;
@@ -95,32 +142,39 @@
         margin-top: 8px;
       };
       @include pad{
-        align-items: flex-start;
+        //mark 至中 point靠前
+        &:has(div):has(.point){
+          align-items: flex-start;
+        };   
+        &:has(div):has(.mark){
+          align-items: center;
+        };      
       };
     };
     .content{
       display: flex;
       font-weight: 400;
       font-size: $fz_lg;
-      line-height: 28px;
-      .date{
+      line-height: 28px;      
+    };
+    .remark{
+      display: flex;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: map-get($c_text,second);
+    };
+    .point{
+      span{
         color: map-get($c_second,color1);
-      };
-      .mark{
+      };        
+    };
+    .mark{
+      span{
         font-size: $fz_sm;
         line-height: 12px;
         @include in-center;
-      };
-    };
-  };
-};
-.cardRules_re{
-  @include pad{
-    flex-direction: row-reverse;
-  };
-  .cardRules__text{
-    @include pad{
-      padding-left: 48px;
+      };        
     };
   };
 };

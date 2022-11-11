@@ -2085,7 +2085,7 @@ body {
 .header .logo img {
   width: 110px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1185px) {
   .header .logo img {
     width: 180px;
   }
@@ -2190,6 +2190,22 @@ body {
 }
 .header .navbar .active {
   display: block !important;
+}
+
+.footer {
+  padding: 26px 0 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    line-height: 20px;
+    padding: 46px 0 32px 0;
+  }
 }
 
 /*background*/
@@ -2741,6 +2757,7 @@ body {
   font-size: 2rem;
   line-height: 48px;
   color: #55FFAD;
+  text-shadow: 0px 0px 10px rgba(85, 255, 173, 0.6);
   padding: 20px 40px 24px;
   position: relative;
 }
@@ -2818,6 +2835,7 @@ body {
 .activity .txt_title {
   display: flex;
   padding-bottom: 36px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
 @media screen and (min-width: 768px) {
   .activity .txt_title {
@@ -2854,6 +2872,124 @@ body {
 @media screen and (min-width: 768px) {
   .activity .img_vector img {
     width: 40px;
+  }
+}
+
+.awards {
+  padding: 82px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.awards .txt_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+.awards .carArea {
+  margin: 32px 0 67px 0;
+  width: 343px;
+  border-bottom: 3px solid #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .awards .carArea {
+    width: 485px;
+  }
+}
+@media screen and (min-width: 1185px) {
+  .awards .carArea {
+    width: 1030px;
+  }
+}
+.awards .carArea .img_vector {
+  width: 36.8px;
+}
+.awards .carArea .img_car {
+  width: 60.29px;
+}
+.awards .cardArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.awards .cardArea .cardRules + .cardRules {
+  margin-top: 24px;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .sponsors {
+    padding: 80px 0 100px 0;
+  }
+}
+.sponsors__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+.sponsors__title .title_en {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 48px;
+  font-family: "Monument Extended";
+}
+.sponsors__title .title_ch {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 36px;
+}
+.sponsors__title .img_starLg {
+  width: 29px;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+.sponsors__title .img_starSm {
+  width: 17px;
+  position: absolute;
+  top: -5px;
+  left: 250px;
+}
+.sponsors__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .sponsors__img {
+    flex-direction: row;
+  }
+}
+.sponsors__img img {
+  width: 132.29px;
+  border-radius: 32px;
+  border: 10px solid transparent;
+}
+.sponsors__img .img_light {
+  background: #FFFFFF;
+}
+.sponsors__img .img_linear {
+  background-image: linear-gradient(90deg, #9DA4FF, #55FFAD);
+}
+.sponsors__img img + img {
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .sponsors__img img + img {
+    margin: 0 0 0 60px;
   }
 }
 
@@ -2921,24 +3057,76 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid #FFFFFF;
   border-radius: 32px;
+}
+.cardRules__1 {
   width: 343px;
   height: 360px;
+  border: 3px solid #FFFFFF;
 }
 @media screen and (min-width: 768px) {
-  .cardRules {
-    flex-direction: row;
+  .cardRules__1 {
     width: 520px;
     height: 300px;
   }
 }
-.cardRules .cardRules_img {
+.cardRules__2 {
+  width: 343px;
+  background: linear-gradient(#151F3F, #151F3F) padding-box, linear-gradient(to right, #313A65, #06102B);
+  border: 1px solid transparent;
+}
+@media screen and (min-width: 768px) {
+  .cardRules__2 {
+    width: 485px;
+  }
+}
+.cardRules__2 .cardRules__text {
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .cardRules_row {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cardRules_re {
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cardRules_re .cardRules__text {
+    padding-left: 48px;
+  }
+}
+.cardRules .img {
   width: 220px;
   height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cardRules .imgSM {
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardRules .imgSM img {
+  width: 80px;
+}
+.cardRules__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #9DA4FF;
+  text-shadow: 0px 0px 10px rgba(157, 164, 255, 0.6);
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .cardRules__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
 }
 .cardRules__text {
   display: flex;
@@ -2966,8 +3154,11 @@ body {
   margin-top: 8px;
 }
 @media screen and (min-width: 768px) {
-  .cardRules__text .part {
+  .cardRules__text .part:has(div):has(.point) {
     align-items: flex-start;
+  }
+  .cardRules__text .part:has(div):has(.mark) {
+    align-items: center;
   }
 }
 .cardRules__text .content {
@@ -2976,24 +3167,20 @@ body {
   font-size: 1.25rem;
   line-height: 28px;
 }
-.cardRules__text .content .date {
+.cardRules__text .remark {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #858993;
+}
+.cardRules__text .point span {
   color: #55FFAD;
 }
-.cardRules__text .content .mark {
+.cardRules__text .mark span {
   font-size: 0.75rem;
   line-height: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .cardRules_re {
-    flex-direction: row-reverse;
-  }
-}
-@media screen and (min-width: 768px) {
-  .cardRules_re .cardRules__text {
-    padding-left: 48px;
-  }
 }/*# sourceMappingURL=all.css.map */

@@ -443,6 +443,7 @@
     font-size: $fz_h3;
     line-height: 48px;
     color: map-get($map: $c_second, $key: color1);
+    text-shadow: 0px 0px 10px rgb(map-get($map: $c_second, $key: color1),0.6);
     padding: 20px 40px 24px;
     position: relative;
     @include pad{
@@ -507,6 +508,7 @@
   .txt_title{
     display: flex;
     padding-bottom: 36px;
+    text-shadow: 0px 0px 10px rgb(map-get($map: $c_text, $key: primary_light),0.6);
     @include pad{
       padding-bottom: 100px;
     };
@@ -538,4 +540,110 @@
     };
   };
   
+};
+.awards{
+  padding: 82px 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .txt_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 0px 0px 10px rgb(map-get($map: $c_text, $key: primary_light),0.6);
+    font-weight: 700;
+    font-size: $fz_xl;
+    line-height: 36px;
+  };
+  .carArea{
+    margin: 32px 0 67px 0;
+    width: 343px;
+    border-bottom: 3px solid #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    @include pad{
+      width: 485px;
+    };
+    @include table{
+      width: 1030px;
+    };
+    .img_vector{
+      width: 36.8px;
+    };
+    .img_car{
+      width: 60.29px;
+    };    
+  };
+  .cardArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cardRules + .cardRules{
+      margin-top: 24px;
+    };
+  };
+};
+.sponsors{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  @include pad{
+    padding: 80px 0 100px 0 ;
+  };
+  &__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 40px;
+    .title_en{
+      font-weight: 700;
+      font-size: $fz_h3;
+      line-height: 48px;
+      font-family: map-get($font_family , en_title );
+    };
+    .title_ch{
+      font-weight: 700;
+      font-size: $fz_xl;
+      line-height: 36px;
+    };
+    .img_starLg{
+      width: 29px;
+      position: absolute;
+      top: 30px;
+      left: -30px;
+    };
+    .img_starSm{
+      width: 17px;
+      position:absolute;
+      top: -5px;
+      left: 250px;
+    };
+  };
+  &__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include pad{
+      flex-direction: row;
+    };
+    img{
+      width: 132.29px;    
+      border-radius: 32px;
+      border: 10px solid transparent;
+    };
+    .img_light{
+      background: map-get($map: $c_text, $key: primary_light);
+    };
+    .img_linear{
+      background-image: linear-gradient(90deg, map-get($c_primary , color1),map-get($c_second , color1));
+    };
+    img + img {
+      margin-top: 24px;
+      @include pad{
+        margin: 0 0 0 60px;
+      };
+    };
+  };
 };

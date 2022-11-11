@@ -124,7 +124,17 @@ body{
     };
   };
 };
-
+.footer{
+  padding: 26px 0 24px 0;
+  @include in-center;
+  font-weight: 500;
+  font-size: $fz_md;
+  line-height: 18px;
+  @include pad{
+    line-height: 20px;
+    padding: 46px 0 32px 0;
+  };
+};
 
 /*background*/
 @for $i from 1 through 3 {
